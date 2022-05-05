@@ -6,8 +6,10 @@ Default configuration changes the meter position overlay the crosshair and chang
 
 I might add config hot reload to ease the customization process, but for now the console command doesnt't work.
 
-![Default uncorrupted][https://raw.githubusercontent.com/krzysztof-ciszewski/CustomizableCorruptionMeter/main/screenshot1.jpg]
-![Default corrupted][https://raw.githubusercontent.com/krzysztof-ciszewski/CustomizableCorruptionMeter/main/screenshot2.jpg]
+![Default uncorrupted](screenshot1.jpg)
+
+![Default corrupted](screenshot2.jpg)
+
 
 ## Configuration
 ### Position
