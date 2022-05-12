@@ -10,12 +10,13 @@ namespace CustomizableCorruptionMeter
     [BepInDependency(R2API.R2API.PluginGUID)]
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     [R2APISubmoduleDependency(nameof(CommandHelper))]
+    [NetworkCompatibility(CompatibilityLevel.NoNeedForSync)]
     public class CustomizableCorruptionMeter : BaseUnityPlugin
     {
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "InvisibleMan";
         public const string PluginName = "CustomizableCorruptionMeter";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.0.2";
         public static ConfigEntry<Vector3> Position { get; set; }
         public static ConfigEntry<bool> DisableCorruptionText { get; set; }
         public static ConfigEntry<float> MeterOpacity { get; set; }

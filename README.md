@@ -6,9 +6,9 @@ Default configuration changes the meter position overlay the crosshair and chang
 
 I might add config hot reload to ease the customization process, but for now the console command doesnt't work.
 
-![Default uncorrupted](screenshot1.jpg)
+![Default uncorrupted](https://raw.githubusercontent.com/krzysztof-ciszewski/CustomizableCorruptionMeter/main/screenshot1.jpg)
 
-![Default corrupted](screenshot2.jpg)
+![Default corrupted](https://raw.githubusercontent.com/krzysztof-ciszewski/CustomizableCorruptionMeter/main/screenshot2.jpg)
 
 
 ## Configuration
@@ -25,6 +25,14 @@ Float from 0 to 1, where 0 is transparent and 1 is fully opaque
 
 ## Changelog
 
+**1.0.2**
+
+* made the mod client only
+
+**1.0.1**
+
+* added dll to the thunderstore package, updated readme
+
 **1.0.0**
 
-* Initial release
+* Initial release - (missing dll on thunderstore)

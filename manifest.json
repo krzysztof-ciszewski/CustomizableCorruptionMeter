@@ -1,6 +1,6 @@
 ﻿{
 	"name": "CustomizableCorruptionMeter",
-	"version_number": "1.0.0",
+	"version_number": "1.0.2",
 	"website_url": "https://github.com/krzysztof-ciszewski/CustomizableCorruptionMeter",
 	"description": "Customize corruption UI",
 	"dependencies": [
