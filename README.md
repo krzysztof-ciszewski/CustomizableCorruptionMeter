@@ -25,6 +25,10 @@ Float from 0 to 1, where 0 is transparent and 1 is fully opaque
 
 ## Changelog
 
+**1.0.3**
+
+* fixed the mod to work with alloyed collective
+
 **1.0.2**
 
 * made the mod client only

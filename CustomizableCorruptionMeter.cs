@@ -3,20 +3,16 @@ using BepInEx.Configuration;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using R2API.Utils;
 
 namespace CustomizableCorruptionMeter
 {
-    [BepInDependency(R2API.R2API.PluginGUID)]
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
-    [R2APISubmoduleDependency(nameof(CommandHelper))]
-    [NetworkCompatibility(CompatibilityLevel.NoNeedForSync)]
     public class CustomizableCorruptionMeter : BaseUnityPlugin
     {
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "InvisibleMan";
         public const string PluginName = "CustomizableCorruptionMeter";
-        public const string PluginVersion = "1.0.2";
+        public const string PluginVersion = "1.0.3";
         public static ConfigEntry<Vector3> Position { get; set; }
         public static ConfigEntry<bool> DisableCorruptionText { get; set; }
         public static ConfigEntry<float> MeterOpacity { get; set; }
@@ -28,7 +24,6 @@ namespace CustomizableCorruptionMeter
 
         public void Awake()
         {
-            CommandHelper.AddToConsoleWhenReady();
             conf = Config;
             initializeConfigEntries();
             addHooks();
@@ -91,14 +86,6 @@ namespace CustomizableCorruptionMeter
             {
                 image.color = new Color(image.color.r, image.color.g, image.color.b, Mathf.Clamp(MeterOpacity.Value, 0f, 1f));
             }
-        }
-
-        //TODO: Fix this
-        [RoR2.ConCommand(commandName = "ccm_config_reload", flags = RoR2.ConVarFlags.None, helpText = "Reload the config file of CustomizableCorruptionMeter.")]
-        static void CCReloadConfig(RoR2.ConCommandArgs args)
-        {
-            if (conf == null) { return; }
-            conf.Reload();
         }
     }
 }
